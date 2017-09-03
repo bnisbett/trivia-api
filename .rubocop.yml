@@ -40,6 +40,16 @@ Metrics/BlockNesting:
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#three-is-the-number-thou-shalt-count'
   Enabled: false
 
+Metrics/BlockLength:
+  ExcludedMethods:
+    - context
+    - describe
+    - it
+    - shared_examples
+    - shared_examples_for
+    - namespace
+    - draw
+
 Style/CaseEquality:
   Description: 'Avoid explicit use of the case equality operator(===).'
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#no-case-equality'
