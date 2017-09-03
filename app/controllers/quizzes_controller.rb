@@ -10,7 +10,7 @@ class QuizzesController < ApplicationController
 
   # GET /quizzes/1
   def show
-    render json: @quiz
+    render json: @quiz, include: ["questions", "questions.answers"]
   end
 
   # POST /quizzes
